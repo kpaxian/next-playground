@@ -1,8 +1,8 @@
-import { type NextApiRequest } from "next"
+import { type NextRequest } from "next/server";
 import { headers, cookies } from "next/headers";
 
 
-export async function GET(request: NextApiRequest) {
+export async function GET(_request: NextRequest) {
 
     const headersList = headers();
     //const requestHeaders = new Headers(request.headers);
