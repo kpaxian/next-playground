@@ -31,8 +31,7 @@ export async function PATCH(
 export async function DELETE(
     _request: Request,
     { params }: { params: { id: string } }
-) {
-    const index = comments.findIndex(
+) { const index = comments.findIndex(
         item => item.id === parseInt(params.id)
     )
     const deletedComment = comments[index];
